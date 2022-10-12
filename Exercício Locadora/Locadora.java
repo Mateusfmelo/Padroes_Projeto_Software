@@ -1,6 +1,7 @@
 public class Locadora {
+    
     public static void main(String[] args) {
-        
+
         Cliente c1 = new Cliente("Juliana");
         c1.adicionaAluguel(new Aluguel(new Fita("O Exorcista ",
                 Fita.NORMAL), 3));
