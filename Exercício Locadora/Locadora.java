@@ -18,3 +18,4 @@ public class Locadora {
         System.out.println(c1.extrato());
     }
 }
+

@@ -95,3 +95,4 @@ public class Aluguel {
         return "Aluguel [fita=" + fita + ", diasAlugada=" + diasAlugada + "]";
     }
 }
+
