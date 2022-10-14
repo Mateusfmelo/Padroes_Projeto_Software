@@ -1,6 +1,7 @@
 <h1 align="center">Explicação do Exercício</h1>
 
-<h3 align="center">A atividade consiste em refatorar os códigos abaixo aplicando padrões de responsabilidade Expert, Creator, Baixo acoplamento e Alta coesão.<h3>  
+<h3 align="center">A atividade consiste em refatorar os códigos abaixo aplicando padrões de responsabilidade Expert, Creator, Baixo acoplamento e Alta coesão.<h3> 
+<h3 align="center">⚠️ Atividade em desenvolvimento ⚠️</h3>
 
 ```  
 public class Locadora {
