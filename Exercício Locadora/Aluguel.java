@@ -41,7 +41,7 @@ public class Aluguel {
         double valorTotal = 0.0;
         int pontosDeAlugadorFrequente = 0;
         Iterator alugueis = fitasAlugadas.iterator();
-        String resultado = "Registro de Alugueis de " + cliente.getNome() + fimDeLinha;
+        String resultado = "Registro de Alugueis de " + .getNome() + fimDeLinha;
         
         while (alugueis.hasNext()) {
             double valorCorrente = 0.0;
