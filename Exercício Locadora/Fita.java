@@ -12,8 +12,24 @@ public class Fita {
         this.códigoDePreço = códigoDePreço;
     }
 
+    public static int getNormal() {
+        return NORMAL;
+    }
+
+    public static int getLançamento() {
+        return LANÇAMENTO;
+    }
+
+    public static int getInfantil() {
+        return INFANTIL;
+    }
+
     public String getTítulo() {
         return título;
+    }
+
+    public void setTítulo(String título) {
+        this.título = título;
     }
 
     public int getCódigoDePreço() {
@@ -22,5 +38,10 @@ public class Fita {
 
     public void setCódigoDePreço(int códigoDePreço) {
         this.códigoDePreço = códigoDePreço;
+    }
+
+    @Override
+    public String toString() {
+        return "Fita [título=" + título + ", códigoDePreço=" + códigoDePreço + "]";
     }
 }
