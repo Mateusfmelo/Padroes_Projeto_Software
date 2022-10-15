@@ -1,48 +1,51 @@
-public class Fita {
+public class Fita implements Fretagem {
 
     public static final int NORMAL = 0;
     public static final int LANÇAMENTO = 1;
     public static final int INFANTIL = 2;
-    
-    private String título;
-    private int códigoDePreço;
+    private String titulo;
+    private Classificacao classificacao;
 
-    public Fita(String título, int códigoDePreço) {
-        this.título = título;
-        this.códigoDePreço = códigoDePreço;
+    public Fita(String titulo, int codigoDePreco) {
+        this.titulo = titulo;
+        setCodigoDePreco(codigoDePreco);
     }
 
-    public static int getNormal() {
-        return NORMAL;
+    public void setCodigoDePreco(int codigoDePreco) {
+        switch (codigoDePreco) {
+            case NORMAL:
+                classificacao = new ClassificacaoNormal();
+                break;
+            case LANÇAMENTO:
+                classificacao = new ClassificacaoLancamento();
+                break;
+            case INFANTIL:
+                classificacao = new ClassificacaoInfantil();
+                break;
+        }
     }
 
-    public static int getLançamento() {
-        return LANÇAMENTO;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public static int getInfantil() {
-        return INFANTIL;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getTítulo() {
-        return título;
+    public Classificacao getClassificacao() {
+        return classificacao;
     }
 
-    public void setTítulo(String título) {
-        this.título = título;
+    public void setClassificacao(Classificacao classificacao) {
+        this.classificacao = classificacao;
     }
 
-    public int getCódigoDePreço() {
-        return códigoDePreço;
+    public double getValorDoAluguel(int diasAlugado) {
+        return classificacao.getValorDoAluguel(diasAlugado);
     }
 
-    public void setCódigoDePreço(int códigoDePreço) {
-        this.códigoDePreço = códigoDePreço;
-    }
-
-    @Override
-    public String toString() {
-        return "Fita [título=" + título + ", códigoDePreço=" + códigoDePreço + "]";
+    public int getPontosDeAlugadorFrequente(int diasAlugado) {
+        return classificacao.getPontosDeAlugadorFrequente(diasAlugado);
     }
 }
-
