@@ -3,6 +3,7 @@ public class Fita implements Fretagem {
     public static final int NORMAL = 0;
     public static final int LANÇAMENTO = 1;
     public static final int INFANTIL = 2;
+    
     private String titulo;
     private Catalogo classificacao;
 
