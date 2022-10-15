@@ -1,4 +1,4 @@
-public class ClassificacaoNormal extends Classificacao {
+public class FitaNormal extends Catalogo {
 
     public double getValorDoAluguel(int diasAlugado) {
          double valorDoAluguel = 2;

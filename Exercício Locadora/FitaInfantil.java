@@ -1,4 +1,4 @@
-public class ClassificacaoInfantil extends Classificacao {
+public class FitaInfantil extends Catalogo {
 
     public double getValorDoAluguel(int diasAlugado) {
         double valorDoAluguel = 1.5;

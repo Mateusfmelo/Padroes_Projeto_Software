@@ -1,4 +1,4 @@
-public class ClassificacaoLancamento extends Classificacao {
+public class FitaLancamento extends Catalogo {
 
     public double getValorDoAluguel(int diasAlugado) {
          return diasAlugado * 3;

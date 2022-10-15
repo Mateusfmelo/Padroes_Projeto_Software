@@ -4,7 +4,7 @@ public class Fita implements Fretagem {
     public static final int LANÇAMENTO = 1;
     public static final int INFANTIL = 2;
     private String titulo;
-    private Classificacao classificacao;
+    private Catalogo classificacao;
 
     public Fita(String titulo, int codigoDePreco) {
         this.titulo = titulo;
@@ -14,13 +14,13 @@ public class Fita implements Fretagem {
     public void setCodigoDePreco(int codigoDePreco) {
         switch (codigoDePreco) {
             case NORMAL:
-                classificacao = new ClassificacaoNormal();
+                classificacao = new FitaNormal();
                 break;
             case LANÇAMENTO:
-                classificacao = new ClassificacaoLancamento();
+                classificacao = new FitaLancamento();
                 break;
             case INFANTIL:
-                classificacao = new ClassificacaoInfantil();
+                classificacao = new FitaInfantil();
                 break;
         }
     }
@@ -33,11 +33,11 @@ public class Fita implements Fretagem {
         this.titulo = titulo;
     }
 
-    public Classificacao getClassificacao() {
+    public Catalogo getClassificacao() {
         return classificacao;
     }
 
-    public void setClassificacao(Classificacao classificacao) {
+    public void setClassificacao(Catalogo classificacao) {
         this.classificacao = classificacao;
     }
 

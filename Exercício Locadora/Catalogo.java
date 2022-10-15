@@ -1,4 +1,4 @@
-public abstract class Classificacao {
+public abstract class Catalogo {
     
     public abstract double getValorDoAluguel(int diasAlugado);
 
